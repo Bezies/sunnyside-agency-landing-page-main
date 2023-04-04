@@ -1,0 +1,697 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 1500px;
+  width: 100vw;
+}
+
+
+/* HEADER  */
+
+header {
+  background-image: url(images/desktop/image-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  max-width: 1500px;
+
+}
+
+header .menu {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  justify-content: space-between;
+  margin: 0px auto;
+  padding: 20px;
+}
+
+header .menu img {
+  width: 150px;
+  height: 30px;
+}
+
+.menu-box {
+  display: flex;
+}
+
+header .menu li {
+  list-style: none;
+}
+
+header .menu a {
+  text-decoration: none;
+  color: white;
+  margin: 20px;
+  font-size: 18px;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+}
+
+#contact {
+  background-color: white;
+  color: hsl(212, 27%, 19%);
+  padding: 15px 30px;
+  border-radius: 50px;
+}
+
+#contact:hover {
+  color: white;
+  background-color: hsla(200, 100%, 72%, 1);
+}
+
+header h1 {
+  text-align: center;
+  color: white;
+  font-family: 'Fraunces', serif;
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+
+header h1::after {
+  content: '';
+  background: url(images/icon-arrow-down.svg);
+  background-size: 30px 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  top: 180px;
+  left: -300px;
+  display: inline-block;
+  width: 40px;
+  height: 130px;
+  z-index: 3;
+}
+
+#hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+
+/* MAIN  */
+
+
+
+
+/* BOX  */
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 600px);
+  /* flex-wrap: wrap; */
+}
+
+.transform,
+.audience {
+  width: 50%;
+  margin: auto;
+}
+
+.transform h2,
+.audience h2 {
+  font-size: 40px;
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  color: hsl(212, 27%, 19%);
+}
+
+.transform p,
+.audience p {
+  color: hsl(232, 10%, 55%);
+  font-family: 'Barlow', sans-serif;
+  font-size: 16px;
+  margin: 30px 0px;
+  font-weight: 600;
+}
+
+.transform a,
+.audience a {
+  color: hsl(212, 27%, 19%);
+  font-size: 22px;
+  font-family: 'Fraunces', serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* LINK UNDERLINE :HOVER  */
+
+.transform a {
+  box-shadow: inset 0px -12px hsl(51, 100%, 49%, 20%);
+  position: relative;
+}
+
+.transform a::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: 15px;
+  border-radius: 50px;
+  box-shadow: inset 0px -12px hsl(51, 100%, 49%, 20%);
+  height: 15px;
+  width: 170px;
+  z-index: -1;
+}
+
+.transform a:hover {
+  box-shadow: inset 0px -12px hsl(51, 100%, 49%);
+}
+
+.transform a:hover::before {
+  box-shadow: inset 0px -12px hsl(51, 100%, 49%);
+}
+
+
+
+.audience a {
+  box-shadow: inset 0px -12px hsl(7, 99%, 70%, 20%);
+  position: relative;
+}
+
+.audience a::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: 15px;
+  border-radius: 50px;
+  box-shadow: inset 0px -12px hsl(7, 99%, 70%, 20%);
+  height: 15px;
+  width: 170px;
+  z-index: -1;
+}
+
+.audience a:hover {
+  box-shadow: inset 0px -12px hsl(7, 99%, 70%);
+}
+
+.audience a:hover::before {
+  box-shadow: inset 0px -12px hsl(7, 99%, 70%);
+}
+
+
+.eggs {
+  background-image: url(images/desktop/image-transform.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.glass {
+  background-image: url(images/desktop/image-stand-out.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+.cherry {
+  background-image: url(images/desktop/image-graphic-design.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+
+.orange {
+  background-image: url(images/desktop/image-photography.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+
+}
+
+.cherry h3 {
+  text-align: center;
+  color: hsl(167, 40%, 24%);
+  font-size: 28px;
+  font-family: 'Fraunces', serif;
+  padding-top: 350px;
+}
+
+.cherry p {
+  text-align: center;
+  color: hsl(167, 40%, 24%);
+  width: 50%;
+  margin: 0 auto;
+}
+
+.orange h3 {
+  text-align: center;
+  color: hsl(198, 62%, 26%);
+  font-size: 28px;
+  font-family: 'Fraunces', serif;
+  padding-top: 350px;
+}
+
+.orange p {
+  text-align: center;
+  color: hsl(198, 62%, 26%);
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+
+
+/* CLIENT TESTIMONIALS */
+
+.testimonials {
+  width: 100%;
+  height: 600px;
+}
+
+.testimonials h3 {
+  text-align: center;
+  padding-top: 60px;
+  color: hsl(210, 4%, 67%);
+  font-family: 'Fraunces', serif;
+  letter-spacing: 5px;
+  font-weight: 700;
+
+}
+
+
+.client {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 150px);
+  padding-top: 60px;
+}
+
+.portrait {
+  width: 100px;
+  border-radius: 50px;
+  align-self: center;
+  justify-self: center;
+}
+
+
+.feedback {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  color: hsl(213, 9%, 39%);
+  font-family: 'Barlow', sans-serif;
+  line-height: 30px;
+  font-size: 14px;
+}
+
+.name-job {
+  text-align: center;
+}
+
+.name-job .name {
+  color: hsl(212, 27%, 19%);
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+}
+
+.name-job .job {
+  font-size: 14px;
+  color: hsl(210, 4%, 67%);
+}
+
+
+/* PICS  */
+
+
+.pics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.pics img {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+
+/* FOOTER  */
+
+footer {
+  background-color: hsla(167, 44%, 70%, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+#logo-footer {
+  width: 150px;
+  height: 30px;
+  margin: 20px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin: 20px 0;
+}
+
+
+.links li {
+  list-style: none;
+}
+
+.links a {
+  text-decoration: none;
+  margin: 0 20px;
+  color: hsla(168, 44%, 32%, 1);
+  font-size: 18px;
+}
+
+.links a:hover {
+  color: white;
+}
+
+
+
+
+
+.RS {
+  display: flex;
+  margin-top: 30px;
+  padding-left: 0;
+}
+
+.RS li {
+  list-style-type: none;
+}
+
+.RS i {
+  margin: 0 15px;
+  color: hsla(168, 44%, 32%, 1);
+  font-size: 22px;
+}
+
+.RS i:hover {
+  color: white;
+  cursor: pointer;
+}
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES  */
+
+
+@media screen and (max-width: 700px) {
+
+
+
+
+  /* MENU  */
+
+
+
+  .menu {
+    position: relative;
+  }
+
+
+  .menu-box {
+    display: none;
+
+  }
+
+  .menu-box-off {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 100px;
+    left: 140px;
+    padding-left: 0;
+    z-index: 5;
+  }
+
+
+
+  .menu-box-off::after {
+    content: '';
+    border-left: 30px solid transparent;
+    border-top: 30px solid transparent;
+    border-right: 30px solid white;
+    height: 0px;
+    position: absolute;
+    top: -30px;
+    left: 240px;
+  }
+
+  header .menu a {
+    color: hsl(232, 10%, 55%);
+  }
+
+  header .menu li {
+    margin: 20px;
+  }
+
+ 
+
+  #hamburger {
+    display: block;
+    width: 35px;
+    height: 30px;
+  }
+
+  #contact {
+    background-color: hsl(51, 100%, 49%);
+  }
+
+
+
+
+  /* BOX  */
+
+  .box {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 500px);
+  }
+
+  .transform {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .transform,
+  .audience {
+    text-align: center;
+    padding: 0 50px;
+  }
+
+  .transform h2,
+  .audience h2 {
+    font-size: 30px;
+  }
+
+  .transform p,
+  .audience p {
+    font-size: 14px;
+  }
+
+
+  .eggs {
+    background-image: url(images/mobile/image-transform.jpg);
+    background-size: cover;
+  }
+
+  .glass {
+    background-image: url(images/mobile/image-stand-out.jpg);
+    background-size: cover;
+  }
+
+
+  .cherry {
+    background-image: url(images/mobile/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+  .orange {
+    background-image: url(images/mobile/image-photography.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .cherry p, .orange p {
+    width: 80%;
+  }
+
+
+  /* CLIENT GRID  */
+
+  .testimonials {
+    height: 1000px;
+  }
+
+  .testimonials h3 {
+    padding-top: 0;
+    margin: 40px 0;
+  }
+
+  .client {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 100px);
+    padding-top: 0;
+  }
+
+  .portrait {
+    width: 70px;
+  }
+
+  
+
+  #emily-feed {
+    grid-column: 1;
+    grid-row: 2;
+    padding: 0 50px;
+    align-self: center;
+    font-size: 16px;
+  }
+
+  #emily {
+    grid-column: 1;
+    grid-row: 3;
+    align-self: center;
+  }
+
+  #thom-portrait {
+    grid-column: 1;
+    grid-row: 4;
+    align-self: center;
+  }
+
+  #thomas-feed {
+    grid-column: 1;
+    grid-row: 5;
+    padding: 0 50px;
+    align-self: center;
+    font-size: 16px;
+  }
+
+  #thomas {
+    grid-column: 1;
+    grid-row: 6;
+    align-self: center;
+  }
+
+
+  #jennie-feed {
+    font-size: 16px;
+    padding: 0 50px;
+  }
+
+
+
+  /* PICS  */
+  .pics {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+
+@media screen and (max-width: 700px) and (min-width: 400px) {
+
+  header h1::after {
+    content: '';
+    background: url(images/icon-arrow-down.svg);
+    background-size: 30px 120px;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 260px;
+    left: -170px;
+    width: 40px;
+    height: 130px;
+    z-index: 2;
+  }
+
+}
+
+
+
+
+
+@media screen and (max-width: 400px) {
+
+  /* MENU  */
+
+  header {
+    background-image: url(images/mobile/image-header.jpg);
+    height: 500px;
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: top;
+  }
+
+
+  header h1::after {
+    content: '';
+    background: url(images/icon-arrow-down.svg);
+    background-size: 30px 80px;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 60px;
+    left: 0px;
+    width: 40px;
+    height: 130px;
+    z-index: 2;
+  }
+
+  .menu-box-off {
+    left: 40px;
+  }
+
+  #contact {
+    background-color: hsl(51, 100%, 49%);
+  }
+
+  #emily-feed { 
+    font-size: 12px;
+  }
+
+#thomas-feed {
+    font-size: 12px;
+  }
+
+#jennie-feed {
+    font-size: 12px;
+  }
+
+}
